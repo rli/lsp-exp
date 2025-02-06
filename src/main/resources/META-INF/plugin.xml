@@ -1,0 +1,34 @@
+<idea-plugin>
+    <id>examplefafafaaf</id>
+    <description>dsfasdffdsfffffffdffdsfasdffdsfffffffdff</description>
+    <version>0.0.1</version>
+    <vendor>vendorrrrrrrrrrrr</vendor>
+
+    <!-- declare hard dependency on redhat module and the jetbrains ultimate platform -->
+<!--    <depends>com.redhat.devtools.lsp4ij</depends>-->
+    <depends>com.intellij.modules.ultimate</depends>
+
+    <!-- Extension declaration for Redhat plugin integration -->
+<!--    <extensions defaultExtensionNs="com.redhat.devtools.lsp4ij">-->
+<!--        <server id="exampleServer" name="mylanguageserver" factoryClass="org.example.lsp.rh.MyLanguageServerFactory">-->
+<!--            <description>description</description>-->
+<!--        </server>-->
+
+<!--        <fileNamePatternMapping patterns="*" serverId="exampleServer"/>-->
+<!--    </extensions>-->
+
+    <!-- Extension declaration for IJ Ultimate LSP APIs -->
+<!--    <extensions defaultExtensionNs="com.intellij.platform.lsp">-->
+<!--        <serverSupportProvider implementation="org.example.lsp.ij.MyLspServerSupportProvider"/>-->
+<!--    </extensions>-->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="example.notification" displayType="TOOL_WINDOW"/>
+    </extensions>
+
+    <actions>
+        <action class="org.example.actions.ManualInvoke">
+            <keyboard-shortcut keymap="$default" first-keystroke="alt C"/>
+        </action>
+    </actions>
+</idea-plugin>
