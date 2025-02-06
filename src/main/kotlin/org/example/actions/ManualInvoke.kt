@@ -31,7 +31,7 @@ class ManualInvoke : DumbAwareAction("Manual Invoke") {
 
 
         // ---- invoke via lsp4j
-        service<LspClientService>()
+        project.service<LspClientService>()
 
 
         // ---- REDHAT ----

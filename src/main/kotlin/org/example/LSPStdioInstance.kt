@@ -4,7 +4,7 @@ import com.intellij.execution.configurations.GeneralCommandLine
 
 val LSP_COMMAND
     get() = GeneralCommandLine(
-        "/path/to/node",
-        "/path/to/aws-lsp-codewhisperer-token-binary.js",
+        "/Users/richali/idetools/lsp-exp/contrib/servers/node",
+        "/Users/richali/idetools/lsp-exp/contrib/servers/aws-lsp-codewhisperer.js",
         "--stdio"
     )
